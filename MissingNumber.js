@@ -11,4 +11,4 @@ const MissingNumber = (n) => {
     return n.length*(n.length+1)/2-sum
 }
 
-console.log(MissingNumber([1,0,3]))
+console.log(MissingNumber([0,1,3,4]))

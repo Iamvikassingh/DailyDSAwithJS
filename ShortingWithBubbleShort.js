@@ -16,4 +16,4 @@ const ShortArry = (inputArg) => {
     }
     return inputArg;
 }
-console.log(ShortArry(unShortArr));
+console.log(ShortArry(unShortArr)); 
