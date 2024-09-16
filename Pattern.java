@@ -12,9 +12,6 @@
 //         }
 //     }
 // }
-
-
-
 // print a pattern in * holo pattern
 // class Pattern {
 //     public static void main(String[] args) {
@@ -35,9 +32,6 @@
 //         }
 //     }
 // }
-
-
-
 // print a pattern in right angle triangle
 // class Pattern {
 //     public static void main(String[] args) {
@@ -65,11 +59,7 @@
 //         }
 //     }
 // }
-
-
-
 // class Pattern {
-
 //     public static void main(String[] args) {
 //         int n = 4;
 //         // outer loop
@@ -85,3 +75,50 @@
 //         }
 //     }
 // }
+
+
+
+
+
+// butterfly pattern 
+class Pattern {
+
+    public static void main(String[] args) {
+        int n = 6;
+        // upper half
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            // spaces
+            int spaces = 2 * (n - i);
+            for (int k = 1; k <= spaces; k++) {
+                System.out.print(" ");
+            }
+
+            //second part
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+
+        //lower half
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            // spaces
+            int spaces = 2 * (n - i);
+            for (int k = 1; k <= spaces; k++) {
+                System.out.print(" ");
+            }
+
+            //second part
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+}
