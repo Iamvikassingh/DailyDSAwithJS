@@ -16,4 +16,4 @@ const fabonaccinumber = (number) => {  //5
     return b;
 }
 
-console.log(fabonaccinumber(10))
+console.log(fabonaccinumber(6))
